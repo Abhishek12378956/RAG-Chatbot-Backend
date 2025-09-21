@@ -4,8 +4,8 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: "npm install"
-    startCommand: "npm start"
+    buildCommand: "cd chatbot-backend && npm install"
+    startCommand: "cd chatbot-backend && npm start"
     autoDeploy: true
     envVars:
       - key: NODE_ENV
